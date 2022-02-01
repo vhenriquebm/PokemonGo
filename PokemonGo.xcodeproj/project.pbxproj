@@ -17,6 +17,7 @@
 		42C097E827A9E92900E64715 /* PokemonGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C097E727A9E92900E64715 /* PokemonGoTests.swift */; };
 		42C097F227A9E92900E64715 /* PokemonGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C097F127A9E92900E64715 /* PokemonGoUITests.swift */; };
 		42C097F427A9E92900E64715 /* PokemonGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C097F327A9E92900E64715 /* PokemonGoUITestsLaunchTests.swift */; };
+		42C0980227A9E98800E64715 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C0980127A9E98800E64715 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		42C097ED27A9E92900E64715 /* PokemonGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C097F127A9E92900E64715 /* PokemonGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGoUITests.swift; sourceTree = "<group>"; };
 		42C097F327A9E92900E64715 /* PokemonGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		42C0980127A9E98800E64715 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C0980227A9E98800E64715 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				42C097E627A9E92900E64715 /* PokemonGoTests */,
 				42C097F027A9E92900E64715 /* PokemonGoUITests */,
 				42C097CB27A9E92700E64715 /* Products */,
+				42C0980027A9E98700E64715 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +132,14 @@
 				42C097F327A9E92900E64715 /* PokemonGoUITestsLaunchTests.swift */,
 			);
 			path = PokemonGoUITests;
+			sourceTree = "<group>";
+		};
+		42C0980027A9E98700E64715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42C0980127A9E98800E64715 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
