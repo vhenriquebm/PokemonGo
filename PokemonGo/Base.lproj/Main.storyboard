@@ -19,14 +19,38 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-Mr-30e">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIQ-Sp-edh">
+                                <rect key="frame" x="354" y="54" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Wcb-9l-cOq"/>
+                                    <constraint firstAttribute="height" constant="50" id="msU-nx-EWg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="compass"/>
+                                <connections>
+                                    <action selector="centralizarJogador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSO-dW-5fA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEV-3K-o1K">
+                                <rect key="frame" x="175" y="798" width="64" height="54"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pokeball"/>
+                                <connections>
+                                    <action selector="abrirPokeDex:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Dc-S1-b6y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Hwr-Mr-30e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qtc-fl-nTo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zIQ-Sp-edh" secondAttribute="trailing" constant="10" id="SGk-4e-fES"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hwr-Mr-30e" secondAttribute="trailing" id="dQn-sj-e9K"/>
+                            <constraint firstItem="zIQ-Sp-edh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ej7-OF-oiJ"/>
+                            <constraint firstItem="fEV-3K-o1K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h18-xt-8kP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hwr-Mr-30e" secondAttribute="bottom" id="j2C-8d-a5D"/>
                             <constraint firstItem="Hwr-Mr-30e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pyJ-hk-YVM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fEV-3K-o1K" secondAttribute="bottom" constant="10" id="tfD-yn-WFd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -35,10 +59,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="70"/>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="compass" width="40" height="40"/>
+        <image name="pokeball" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
